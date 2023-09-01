@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+
+        <h1>Libary</h1>
+        <div class="about-me">
+            <p>Project made by </p>
+            <a href="https://github.com/lujfy">
+                <img src="./image/cat.png" alt="logo" height="100px">
+            </a>
+        </div>
+        
+    </div>
+
+    <button id="new-book-btn">New Book</button>
+
+    <form id="new-book-form" style="display: none;" action="">
+
+        <label for="title">Title</label>
+        <input type="text" id="title">
+
+        <label for="author">Author</label>
+        <input type="text" id="author">
+
+        <label for="pages">pages</label>
+        <input type="text" id="pages">
+
+        <label for="read">Have you read it : </label>
+        <input type="checkbox" id="read">
+
+        <button type="submit" class="submitBtn" value="Add Book">Add Book</button>
+        <button type="button" class="DoneBtn" onclick="Done()">Done </button>
+    
+    </form>
+
+    <div class="libary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
